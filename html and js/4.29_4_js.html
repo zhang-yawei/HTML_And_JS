@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<body>
+
+<script type="text/javascript">
+document.write("Hello World!")
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+<p>不支持 JavaScript 的浏览器将显示 noscript 元素中的文本。</p>
+ 
+
+<!--<script> 标签用于定义客户端脚本，比如 JavaScript。
+
+script 元素既可包含脚本语句，也可通过 src 属性指向外部脚本文件。
+
+必需的 type 属性规定脚本的 MIME 类型。
+
+JavaScript 最常用于图片操作、表单验证以及内容动态更新。-->
+
+
+
+<!--
+
+	url:
+scheme://host.domain:port/path/filename
+
+解释：
+
+    scheme - 定义因特网服务的类型。最常见的类型是 http
+    host - 定义域主机（http 的默认主机是 www）
+    domain - 定义因特网域名，比如 w3school.com.cn
+    :port - 定义主机上的端口号（http 的默认端口号是 80）
+    path - 定义服务器上的路径（如果省略，则文档必须位于网站的根目录中）。
+    filename - 定义文档/资源的名称
+
+编者注：URL 的英文全称是 Uniform Resource Locator，中文也译为“统一资源定位符”。
+
+
+URL Schemes
+
+以下是其中一些最流行的 scheme：
+Scheme 	访问 	用于...
+http 	超文本传输协议 	以 http:// 开头的普通网页。不加密。
+https 	安全超文本传输协议 	安全网页。加密所有信息交换。
+ftp 	文件传输协议 	用于将文件下载或上传至网站。
+file 	  	您计算机上的文件。
+
+
+
+-->
+
+
+
+<button type="button" onclick="alert('hello word')">hellojs</button>
+
+
+
+
+<p id="demo">
+JavaScript 能改变 HTML 元素的内容。
+</p>
+
+<script>
+function myFunction()
+{
+x=document.getElementById("demo");  // 找到元素
+var str = x.innerHTML;
+if (str=="Hello JavaScript!") {
+	x.innerHTML = "JavaScript 能改变 HTML 元素的内容。";
+}else{
+	x.innerHTML="Hello JavaScript!";    // 改变内容
+}
+
+
+	
+
+}
+</script>
+
+<button type="button" onclick="myFunction()">点击这里</button>
+
+
+<hr/>
+
+
+<p>请输入数字。如果输入值不是数字，浏览器会弹出提示框。</p>
+
+<input id="demoTwo" type="text">
+
+<script>
+function myFunctionTwo()
+{
+var x=document.getElementById("demoTwo").value;
+if(x==""||isNaN(x))
+	{
+	alert("Not Numeric");
+	}
+}
+</script>
+
+<button type="button" onclick="myFunctionTwo()">点击这里</button>
+
+<hr/>
+
+
+
+
+
+
+
+</body>
+</html>
